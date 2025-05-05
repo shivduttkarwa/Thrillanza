@@ -140,7 +140,7 @@ body {
 .mobile-menu-box {
   background:   var(--light);
   border-radius:12px;
-  width:        70vw;
+  width:        80vw;
   height: 70vh;
   max-width:    360px;
   padding:      2rem 1.5rem 2.5rem;
