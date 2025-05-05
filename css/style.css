@@ -939,7 +939,7 @@ body {
   /* Center the graphic, but full width with padding */
   .ui-illustration {
     flex:       0 0 100%;
-    max-width:  60%;
+    max-width:  70%;
     margin:     0 auto;
   }
 
