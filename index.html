@@ -14,21 +14,54 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <header class="site-header">
-      <nav class="navbar">
-        <a href="#" class="logo">
-          <img src="images/logo.png" alt="Thrillanza Logo" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Experts</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Contact</a></li>
+
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Thrillanza logo" class="logo" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experts">Experts</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="btn-primary nav-cta">Get Started</button>
+
+      <!-- Two-dot “open” button -->
+      <button class="menu-toggle open-btn" aria-label="Open menu">
+        <span class="dot"></span><span class="dot"></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE OVERLAY WRAPPER -->
+    <div class="mobile-menu" aria-hidden="true">
+      <!-- centred white box -->
+      <div class="mobile-menu-box">
+        <!-- Four-dot close -->
+        <button class="menu-toggle close-btn" aria-label="Close menu">
+          <span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span>
+        </button>
+
+        <ul class="mobile-nav-links">
+          <li style="animation-delay: 0.1s"><a href="#home">Home</a></li>
+          <li style="animation-delay: 0.2s">
+            <a href="#destinations">Destinations</a>
+          </li>
+          <li style="animation-delay: 0.3s"><a href="#experts">Experts</a></li>
+          <li style="animation-delay: 0.4s">
+            <a href="#resources">Resources</a>
+          </li>
+          <li style="animation-delay: 0.5s"><a href="#contact">Contact</a></li>
+          <li style="animation-delay: 0.6s">
+            <button class="btn-primary mobile-cta">Get Started</button>
+          </li>
         </ul>
-        <div class="hamburger"><span></span><span></span><span></span></div>
-      </nav>
-    </header>
+      </div>
+    </div>
 
     <!-- HERO SLIDER -->
     <section class="hero-slider">

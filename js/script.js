@@ -1,14 +1,20 @@
-/* ───────────────────────────────────────────────────────────────── */
-/* HAMBURGER MENU TOGGLE                                           */
-/* ───────────────────────────────────────────────────────────────── */
-const burger   = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const navbarEl = document.querySelector('.navbar');
+// Toggle mobile menu
+const openBtn    = document.querySelector('.open-btn');
+const closeBtn   = document.querySelector('.close-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-burger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-  navbarEl.classList.toggle('active');
+openBtn.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+  mobileMenu.setAttribute('aria-hidden', 'false');
 });
+
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+});
+
+
+
 
 /* ───────────────────────────────────────────────────────────────── */
 /* HERO SECTION SLIDER (uses 100vw so no bleed of neighbors)       */
