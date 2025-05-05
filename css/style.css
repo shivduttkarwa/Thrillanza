@@ -962,7 +962,7 @@ body {
   .icon-hotels    { top: -22px; left: 50%;  transform: translateX(-50%); }
   .icon-packages  { top: 50%; right: -80px; transform: translateY(-50%); }
   .icon-flights   { bottom: -22px; left: 50%; transform: translateX(-50%); }
-  .icon-driving   { top: 50%; left: -70px;  transform: translateY(-50%); }
+  .icon-driving   { top: 50%; left: -80px;  transform: translateY(-50%); }
 
   /* Text area full width-ish, left aligned */
   .ui-text {
