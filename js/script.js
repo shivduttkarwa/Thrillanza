@@ -1,18 +1,37 @@
 // Toggle mobile menu
-const openBtn    = document.querySelector('.open-btn');
-const closeBtn   = document.querySelector('.close-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
 
-openBtn.addEventListener('click', () => {
-  mobileMenu.classList.add('active');
-  mobileMenu.setAttribute('aria-hidden', 'false');
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileToggle = document.getElementById("mobileToggle");
+  const mainMenu = document.getElementById("mainMenu");
+
+  mobileToggle.addEventListener("click", function () {
+    this.classList.toggle("active");
+    mainMenu.classList.toggle("active");
+  });
+
+  // Close menu when clicking on a link (mobile)
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      if (window.innerWidth <= 992) {
+        mobileToggle.classList.remove("active");
+        mainMenu.classList.remove("active");
+      }
+    });
+  });
+
+  // Detect scroll for navbar effects
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.style.height = "70px";
+      navbar.style.background = "rgba(255, 255, 255, 0.95)";
+    } else {
+      navbar.style.height = "80px";
+      navbar.style.background = "rgba(255, 255, 255, 0.8)";
+    }
+  });
 });
-
-closeBtn.addEventListener('click', () => {
-  mobileMenu.classList.remove('active');
-  mobileMenu.setAttribute('aria-hidden', 'true');
-});
-
 
 
 

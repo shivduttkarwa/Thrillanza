@@ -13,723 +13,736 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-
-    <nav class="navbar">
-      <div class="logo-container">
-        <img src="images/logo.png" alt="Thrillanza logo" class="logo" />
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#destinations">Destinations</a></li>
-        <li><a href="#experts">Experts</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <!-- Two-dot “open” button -->
-      <button class="menu-toggle open-btn" aria-label="Open menu">
-        <span class="dot"></span><span class="dot"></span>
-      </button>
-    </nav>
-
-    <!-- MOBILE OVERLAY WRAPPER -->
-    <div class="mobile-menu" aria-hidden="true">
-      <!-- centred white box -->
-      <div class="mobile-menu-box">
-        <!-- Four-dot close -->
-        <button class="menu-toggle close-btn" aria-label="Close menu">
-          <span class="dot"></span><span class="dot"></span>
-          <span class="dot"></span><span class="dot"></span>
-        </button>
-
-        <ul class="mobile-nav-links">
-          <li style="animation-delay: 0.1s"><a href="#home">Home</a></li>
-          <li style="animation-delay: 0.2s">
-            <a href="#destinations">Destinations</a>
+   
+    <body>
+      <!-- Background decorations -->
+      <div class="bg-decoration"></div>
+      <div class="bg-decoration"></div>
+  
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Thrillanza Logo" />
+          <h1>Thrillanza</h1>
+        </div>
+  
+        <ul class="menu" id="mainMenu">
+          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Destinations</a>
           </li>
-          <li style="animation-delay: 0.3s"><a href="#experts">Experts</a></li>
-          <li style="animation-delay: 0.4s">
-            <a href="#resources">Resources</a>
-          </li>
-          <li style="animation-delay: 0.5s"><a href="#contact">Contact</a></li>
-          <li style="animation-delay: 0.6s"></li>
+          <li class="menu-item"><a href="#" class="menu-link">Experiences</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
         </ul>
-      </div>
-    </div>
+  
+        <button class="btn-book">Book Now</button>
+  
+        <button class="mobile-toggle" id="mobileToggle">
+          <div class="toggle-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </nav>
+  
+    
+        <!-- HERO SLIDER -->
+        <section class="hero-slider">
+          <div class="slides">
+            <!-- Slide 1 -->
+            <div
+              class="slide"
+              style="background-image: url('images/slider-1.jpeg')"
+            >
+              <div class="overlay"></div>
+              <div class="hero-content">
+                <h1>Find the Perfect Place to Go</h1>
+                <p>
+                  Explore curated recommendations for every trip, mood, and
+                  budget.
+                </p>
+                <div class="search-bar">
+                  <input type="text" placeholder="Where are you going?" />
+                  <button class="btn-primary">Start Planning</button>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div
+              class="slide"
+              style="background-image: url('images/paris.jpeg')"
+            >
+              <div class="overlay"></div>
+              <div class="hero-content">
+                <h1>Discover Hidden Gems</h1>
+                <button class="btn-primary">Explore Now</button>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div
+              class="slide"
+              style="background-image: url('images/slider3.jpeg')"
+            >
+              <div class="overlay"></div>
+              <div class="hero-content">
+                <h1>Plan Your Dream Vacation</h1>
+                <button class="btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="hero-prev">‹</button>
+            <button class="hero-next">›</button>
+          </div>
+        </section>
 
-    <!-- HERO SLIDER -->
-    <section class="hero-slider">
-      <div class="slides">
-        <!-- Slide 1 -->
-        <div
-          class="slide"
-          style="background-image: url('images/slider-1.jpeg')"
-        >
-          <div class="overlay"></div>
-          <div class="hero-content">
-            <h1>Find the Perfect Place to Go</h1>
-            <p>
-              Explore curated recommendations for every trip, mood, and budget.
+        <!-- FEATURES -->
+        <!-- FEATURES -->
+        <section class="features">
+          <div class="container">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <img src="icons/tour-guide.png" alt="Local Experts" />
+              </div>
+              <h3>Local Experts</h3>
+              <p>Insider tips from those who know best.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <img src="icons/booking.png" alt="Easy Booking" />
+              </div>
+              <h3>Easy Bookings</h3>
+              <p>Plan everything in one beautiful dashboard.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <img src="icons/24-hours.png" alt="24/7 Support" />
+              </div>
+              <h3>24/7 Support</h3>
+              <p>We’re here whenever you need us.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- trip inspiration section  -->
+
+        <!-- JAIPUR TRAVEL INSPIRATION SECTION -->
+        <div class="jt-container">
+          <div class="jt-trip-header">
+            <h3 class="jt-subtitle">Trip Inspiration</h3>
+            <h6 class="jt-title">
+              Find the perfect place to go activities, hotels, and more
+            </h6>
+            <p class="jt-company-tagline">
+              Experience the world with Jaipur's finest travel curators
             </p>
-            <div class="search-bar">
-              <input type="text" placeholder="Where are you going?" />
-              <button class="btn-primary">Start Planning</button>
-            </div>
           </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="slide" style="background-image: url('images/paris.jpeg')">
-          <div class="overlay"></div>
-          <div class="hero-content">
-            <h1>Discover Hidden Gems</h1>
-            <button class="btn-primary">Explore Now</button>
+
+          <div class="jt-filter-buttons">
+            <button class="jt-filter-button jt-active" data-filter="all">
+              All
+            </button>
+            <button class="jt-filter-button" data-filter="adventure">
+              Adventure
+            </button>
+            <button class="jt-filter-button" data-filter="adrenaline">
+              High Adrenaline
+            </button>
+            <button class="jt-filter-button" data-filter="water">
+              Water Sports
+            </button>
+            <button class="jt-filter-button" data-filter="culture">
+              History & Culture
+            </button>
+            <button class="jt-filter-button" data-filter="other">
+              Other Activities
+            </button>
           </div>
-        </div>
-        <!-- Slide 3 -->
-        <div class="slide" style="background-image: url('images/slider3.jpeg')">
-          <div class="overlay"></div>
-          <div class="hero-content">
-            <h1>Plan Your Dream Vacation</h1>
-            <button class="btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
-      <div class="slider-nav">
-        <button class="hero-prev">‹</button>
-        <button class="hero-next">›</button>
-      </div>
-    </section>
 
-    <!-- FEATURES -->
-    <section class="features">
-      <div class="container">
-        <div class="feature">
-          <img src="icons/tour-guide.png" alt="" />
-          <h3>Local Experts</h3>
-          <p>Insider tips from those who know best.</p>
-        </div>
-        <div class="feature">
-          <img src="icons/booking.png" alt="" />
-          <h3>Easy Booking</h3>
-          <p>Plan all in one place.</p>
-        </div>
-        <div class="feature">
-          <img src="icons/24-hours.png" alt="" />
-          <h3>24/7 Support</h3>
-          <p>We’re here whenever you need us.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- trip inspiration section  -->
-
-    <!-- JAIPUR TRAVEL INSPIRATION SECTION -->
-    <div class="jt-container">
-      <div class="jt-trip-header">
-        <h6 class="jt-subtitle">Trip Inspiration</h6>
-        <h2 class="jt-title">
-          Find the perfect place to go activities, hotels, and more
-        </h2>
-        <p class="jt-company-tagline">
-          Experience the world with Jaipur's finest travel curators
-        </p>
-      </div>
-
-      <div class="jt-filter-buttons">
-        <button class="jt-filter-button jt-active" data-filter="all">
-          All
-        </button>
-        <button class="jt-filter-button" data-filter="adventure">
-          Adventure
-        </button>
-        <button class="jt-filter-button" data-filter="adrenaline">
-          High Adrenaline
-        </button>
-        <button class="jt-filter-button" data-filter="water">
-          Water Sports
-        </button>
-        <button class="jt-filter-button" data-filter="culture">
-          History & Culture
-        </button>
-        <button class="jt-filter-button" data-filter="other">
-          Other Activities
-        </button>
-      </div>
-
-      <div class="jt-activities-grid">
-        <!-- Card 1: Hiking - India -->
-        <div class="jt-activity-card" data-category="adventure">
-          <img
-            src="images/hiking-himalayas.jpeg"
-            alt="Hiking in Himalayas"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+          <div class="jt-activities-grid">
+            <!-- Card 1: Hiking - India -->
+            <div class="jt-activity-card" data-category="adventure">
+              <img
+                src="images/hiking-himalayas.jpeg"
+                alt="Hiking in Himalayas"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Hiking
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Ultimate Himalayan Luxury Trekking Experience
+                  </h3>
+                </div>
               </div>
-              Hiking
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Ultimate Himalayan Luxury Trekking Experience
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 2: Wildlife Safari -->
-        <div class="jt-activity-card" data-category="adventure">
-          <img
-            src="images/tiger.webp"
-            alt="Ranthambore Tiger Safari"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 2: Wildlife Safari -->
+            <div class="jt-activity-card" data-category="adventure">
+              <img
+                src="images/tiger.webp"
+                alt="Ranthambore Tiger Safari"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Wildlife Safari
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Ranthambore Tiger Trail & Exotic Wildlife
+                  </h3>
+                </div>
               </div>
-              Wildlife Safari
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Ranthambore Tiger Trail & Exotic Wildlife
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 3: Cape Town Surfing -->
-        <div class="jt-activity-card" data-category="water adrenaline">
-          <img
-            src="images/surfing.jpeg"
-            alt="Surfing in Cape Town"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 3: Cape Town Surfing -->
+            <div class="jt-activity-card" data-category="water adrenaline">
+              <img
+                src="images/surfing.jpeg"
+                alt="Surfing in Cape Town"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Surfing
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Journeying Through Nelson Mandela's Roots
+                  </h3>
+                </div>
               </div>
-              Surfing
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Journeying Through Nelson Mandela's Roots
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 4: Europe Cycling -->
-        <div class="jt-activity-card" data-category="adventure">
-          <img
-            src="images/cycling.jpg"
-            alt="Cycling in Croatia"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 4: Europe Cycling -->
+            <div class="jt-activity-card" data-category="adventure">
+              <img
+                src="images/cycling.jpg"
+                alt="Cycling in Croatia"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Cycling
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    The Ultimate Croatian Epicurean Journey
+                  </h3>
+                </div>
               </div>
-              Cycling
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                The Ultimate Croatian Epicurean Journey
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 5: All Kayaking -->
-        <div class="jt-activity-card" data-category="water">
-          <img
-            src="images/kayaking.jpeg"
-            alt="Kayaking"
-            class="jt-activity-image jt-dark-overlay"
-          />
-          <div class="jt-activity-overlay jt-clean-overlay">
-            <div class="jt-activity-type"></div>
-            <div class="jt-activity-info jt-centered-content">
-              <div class="jt-icon jt-large-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 5: All Kayaking -->
+            <div class="jt-activity-card" data-category="water">
+              <img
+                src="images/kayaking.jpeg"
+                alt="Kayaking"
+                class="jt-activity-image jt-dark-overlay"
+              />
+              <div class="jt-activity-overlay jt-clean-overlay">
+                <div class="jt-activity-type"></div>
+                <div class="jt-activity-info jt-centered-content">
+                  <div class="jt-icon jt-large-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="jt-search-label">Search All</h3>
+                  <p class="jt-activity-name">Kayaking</p>
+                </div>
               </div>
-              <h3 class="jt-search-label">Search All</h3>
-              <p class="jt-activity-name">Kayaking</p>
             </div>
-          </div>
-        </div>
 
-        <!-- Card 6: Whale Watching -->
-        <div class="jt-activity-card" data-category="water other">
-          <img
-            src="images/whale.webp"
-            alt="Whale Watching in Namibia"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 6: Whale Watching -->
+            <div class="jt-activity-card" data-category="water other">
+              <img
+                src="images/whale.webp"
+                alt="Whale Watching in Namibia"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Whale Watching
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Best of Namibia Safari & Nature Journey
+                  </h3>
+                </div>
               </div>
-              Whale Watching
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Best of Namibia Safari & Nature Journey
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 7: Ibiza Party -->
-        <div class="jt-activity-card" data-category="other">
-          <img
-            src="images/ibiza.jpeg"
-            alt="Party in Ibiza"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 7: Ibiza Party -->
+            <div class="jt-activity-card" data-category="other">
+              <img
+                src="images/ibiza.jpeg"
+                alt="Party in Ibiza"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Party
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Ibiza's Finest Nightlife & Beach Experience
+                  </h3>
+                </div>
               </div>
-              Party
             </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Ibiza's Finest Nightlife & Beach Experience
-              </h3>
-            </div>
-          </div>
-        </div>
 
-        <!-- Card 8: Rajasthan Cultural Tour -->
-        <div class="jt-activity-card" data-category="culture">
-          <img
-            src="images/rajasthan.jpeg"
-            alt="Rajasthan Cultural Tour"
-            class="jt-activity-image"
-          />
-          <div class="jt-activity-overlay">
-            <div class="jt-activity-type">
-              <div class="jt-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                  />
-                </svg>
+            <!-- Card 8: Rajasthan Cultural Tour -->
+            <div class="jt-activity-card" data-category="culture">
+              <img
+                src="images/rajasthan.jpeg"
+                alt="Rajasthan Cultural Tour"
+                class="jt-activity-image"
+              />
+              <div class="jt-activity-overlay">
+                <div class="jt-activity-type">
+                  <div class="jt-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                      />
+                    </svg>
+                  </div>
+                  Heritage
+                </div>
+                <div class="jt-activity-info">
+                  <h3 class="jt-activity-title">
+                    Royal Rajasthan: Palaces, Forts & Desert Experience
+                  </h3>
+                </div>
               </div>
-              Heritage
-            </div>
-            <div class="jt-activity-info">
-              <h3 class="jt-activity-title">
-                Royal Rajasthan: Palaces, Forts & Desert Experience
-              </h3>
             </div>
           </div>
+
+          <!-- Navigation Controls -->
+          <div class="jt-slider-controls jt-next-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </div>
+
+          <div class="jt-slider-controls jt-prev-btn jt-hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </div>
+
+          <div class="jt-watermark">
+            <span>From Jaipur to the World</span>
+          </div>
         </div>
-      </div>
+        <!-- END JAIPUR TRAVEL INSPIRATION SECTION -->
 
-      <!-- Navigation Controls -->
-      <div class="jt-slider-controls jt-next-btn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#000"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      </div>
+        <!-- easy to use ui section    -->
 
-      <div class="jt-slider-controls jt-prev-btn jt-hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#000"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M15 18l-6-6 6-6" />
-        </svg>
-      </div>
+        <section class="ui-section">
+          <div class="container ui-container">
+            <!-- Illustration + icons -->
+            <div class="ui-illustration">
+              <div class="ui-backdrop"></div>
+              <img src="icons/app-ui.png" alt="App UI screenshot" />
 
-      <div class="jt-watermark">
-        <span>From Jaipur to the World</span>
-      </div>
-    </div>
-    <!-- END JAIPUR TRAVEL INSPIRATION SECTION -->
+              <a href="#hotels" class="ui-icon icon-hotels">
+                <img src="icons/hotel.png" alt="" /><span>Hotels</span>
+              </a>
 
-    <!-- easy to use ui section    -->
+              <a href="#packages" class="ui-icon icon-flights">
+                <img src="icons/flights.png" alt="" /><span>Flights</span>
+              </a>
+              <a href="#flights" class="ui-icon icon-packages">
+                <img src="icons/packages.png" alt="" /><span>Packages</span>
+              </a>
+              <a href="#car-rental" class="ui-icon icon-driving">
+                <img src="icons/car.png" alt="" /><span>Car Rental</span>
+              </a>
+            </div>
 
-    <section class="ui-section">
-      <div class="container ui-container">
-        <!-- Illustration + icons -->
-        <div class="ui-illustration">
-          <div class="ui-backdrop"></div>
-          <img src="icons/app-ui.png" alt="App UI screenshot" />
-
-          <a href="#hotels" class="ui-icon icon-hotels">
-            <img src="icons/hotel.png" alt="" /><span>Hotels</span>
-          </a>
-
-          <a href="#packages" class="ui-icon icon-flights">
-            <img src="icons/flights.png" alt="" /><span>Flights</span>
-          </a>
-          <a href="#flights" class="ui-icon icon-packages">
-            <img src="icons/packages.png" alt="" /><span>Packages</span>
-          </a>
-          <a href="#car-rental" class="ui-icon icon-driving">
-            <img src="icons/car.png" alt="" /><span>Car Rental</span>
-          </a>
-        </div>
-
-        <!-- Text -->
-        <div class="ui-text">
-          <p class="ui-pretitle">Easy to use UI for trip planning</p>
-          <h2 class="ui-title">Ridiculously Easy to Use</h2>
-          <p class="ui-body">
-            Whether you’re booking hotels, planning activities, or mapping your
-            route, our intuitive interface brings everything into one beautiful
-            dashboard— so you can focus on the fun part of travel.
-          </p>
-          <button class="btn-primary">Let’s Plan Your Trip</button>
-        </div>
-      </div>
-    </section>
-    <!-- 
+            <!-- Text -->
+            <div class="ui-text">
+              <p class="ui-pretitle">Easy to use UI for trip planning</p>
+              <h2 class="ui-title">Ridiculously Easy to Use</h2>
+              <p class="ui-body">
+                Whether you’re booking hotels, planning activities, or mapping
+                your route, our intuitive interface brings everything into one
+                beautiful dashboard— so you can focus on the fun part of travel.
+              </p>
+              <button class="btn-primary">Let’s Plan Your Trip</button>
+            </div>
+          </div>
+        </section>
+        <!-- 
     popular destinations -->
 
-    <section class="popular-destinations">
-      <div class="pd-header">
-        <h2>Popular Destinations International</h2>
-        <a href="/destinations" class="btn-view-all">View All</a>
-      </div>
+        <section class="popular-destinations">
+          <div class="pd-header">
+            <h2>Popular Destinations International</h2>
+            <a href="/destinations" class="btn-view-all">View All</a>
+          </div>
 
-      <div class="pd-content">
-        <!-- Featured big card -->
-        <div class="pd-feature">
-          <div
-            class="pd-card pd-large"
-            style="background-image: url('images/london.jpeg')"
-          >
-            <span class="pd-label">United Kingdom</span>
-          </div>
-        </div>
+          <div class="pd-content">
+            <!-- Featured big card -->
+            <div class="pd-feature">
+              <div
+                class="pd-card pd-large"
+                style="background-image: url('images/london.jpeg')"
+              >
+                <span class="pd-label">United Kingdom</span>
+              </div>
+            </div>
 
-        <!-- Grid of smaller cards -->
-        <div class="pd-grid">
-          <div
-            class="pd-card"
-            style="background-image: url('images/france.webp')"
-          >
-            <span class="pd-label">France</span>
+            <!-- Grid of smaller cards -->
+            <div class="pd-grid">
+              <div
+                class="pd-card"
+                style="background-image: url('images/france.webp')"
+              >
+                <span class="pd-label">France</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/turkey.jpeg')"
+              >
+                <span class="pd-label">Turkey</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/slider3.jpeg')"
+              >
+                <span class="pd-label">Switzerland</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/spain.jpeg')"
+              >
+                <span class="pd-label">Spain</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/greece.jpeg')"
+              >
+                <span class="pd-label">Greece</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/netherland.jpeg')"
+              >
+                <span class="pd-label">Netherlands</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/italy.jpeg')"
+              >
+                <span class="pd-label">Italy</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/austria.jpeg')"
+              >
+                <span class="pd-label">Austria</span>
+              </div>
+            </div>
           </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/turkey.jpeg')"
-          >
-            <span class="pd-label">Turkey</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/slider3.jpeg')"
-          >
-            <span class="pd-label">Switzerland</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/spain.jpeg')"
-          >
-            <span class="pd-label">Spain</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/greece.jpeg')"
-          >
-            <span class="pd-label">Greece</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/netherland.jpeg')"
-          >
-            <span class="pd-label">Netherlands</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/italy.jpeg')"
-          >
-            <span class="pd-label">Italy</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/austria.jpeg')"
-          >
-            <span class="pd-label">Austria</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="popular-destinations">
-      <div class="pd-header">
-        <h2>Popular Destinations India</h2>
-        <a href="/destinations" class="btn-view-all">View All</a>
-      </div>
+        <section class="popular-destinations">
+          <div class="pd-header">
+            <h2>Popular Destinations India</h2>
+            <a href="/destinations" class="btn-view-all">View All</a>
+          </div>
 
-      <div class="pd-content">
-        <!-- Featured big card -->
-        <div class="pd-feature">
-          <div
-            class="pd-card pd-large"
-            style="background-image: url('images/kerala.jpeg')"
-          >
-            <span class="pd-label">Kerala</span>
-          </div>
-        </div>
+          <div class="pd-content">
+            <!-- Featured big card -->
+            <div class="pd-feature">
+              <div
+                class="pd-card pd-large"
+                style="background-image: url('images/kerala.jpeg')"
+              >
+                <span class="pd-label">Kerala</span>
+              </div>
+            </div>
 
-        <!-- Grid of smaller cards -->
-        <div class="pd-grid">
-          <div
-            class="pd-card"
-            style="background-image: url('images/Shimla.jpeg')"
-          >
-            <span class="pd-label"> Shimla</span>
+            <!-- Grid of smaller cards -->
+            <div class="pd-grid">
+              <div
+                class="pd-card"
+                style="background-image: url('images/Shimla.jpeg')"
+              >
+                <span class="pd-label"> Shimla</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/goa.jpeg')"
+              >
+                <span class="pd-label">Goa</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/leh-ladakh.webp')"
+              >
+                <span class="pd-label">Leh-Laddakh</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/coorg.jpg')"
+              >
+                <span class="pd-label">Coorg</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/sikkim.jpg')"
+              >
+                <span class="pd-label">Sikkim</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/raj.jpg')"
+              >
+                <span class="pd-label">Rajasthan</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/andaman.jpg')"
+              >
+                <span class="pd-label">Andaman</span>
+              </div>
+              <div
+                class="pd-card"
+                style="background-image: url('images/kashmir.jpeg')"
+              >
+                <span class="pd-label">Kashmir</span>
+              </div>
+            </div>
           </div>
-          <div class="pd-card" style="background-image: url('images/goa.jpeg')">
-            <span class="pd-label">Goa</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/leh-ladakh.webp')"
-          >
-            <span class="pd-label">Leh-Laddakh</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/coorg.jpg')"
-          >
-            <span class="pd-label">Coorg</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/sikkim.jpg')"
-          >
-            <span class="pd-label">Sikkim</span>
-          </div>
-          <div class="pd-card" style="background-image: url('images/raj.jpg')">
-            <span class="pd-label">Rajasthan</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/andaman.jpg')"
-          >
-            <span class="pd-label">Andaman</span>
-          </div>
-          <div
-            class="pd-card"
-            style="background-image: url('images/kashmir.jpeg')"
-          >
-            <span class="pd-label">Kashmir</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- illustration -->
+        <!-- illustration -->
 
-    <section class="value-section">
-      <!-- CENTERED TEXT -->
-      <div class="value-content">
-        <h2 class="value-title">The Value for Experience</h2>
-        <p class="value-subtitle">Relax… You’re with us! We make it simple.</p>
-        <a href="#plan" class="btn-primary">Start Planning</a>
-      </div>
-
-      <!-- TWO ICONS AT BOTTOM LEFT -->
-      <div class="illu-bottom illu-left">
-        <img src="icons/hiking.svg" alt="Hiking" class="illu-icon" />
-        <img src="icons/h1.svg" alt="Backpack" class="illu-icon" />
-      </div>
-
-      <!-- TWO ICONS AT BOTTOM RIGHT -->
-      <div class="illu-bottom illu-right">
-        <img src="icons/h2.svg" alt="Scooter" class="illu-icon" />
-        <img src="icons/h3.svg" alt="Landmark" class="illu-icon" />
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <p>123 Travel Lane<br />Adventure City, Earth</p>
-          <p>+1 (555) 123-4567<br />support@thrillanza.com</p>
-        </div>
-        <div class="footer-col">
-          <h4>Follow Us</h4>
-          <div class="social">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+        <section class="value-section">
+          <!-- CENTERED TEXT -->
+          <div class="value-content">
+            <h2 class="value-title">The Value for Experience</h2>
+            <p class="value-subtitle">
+              Relax… You’re with us! We make it simple.
+            </p>
+            <a href="#plan" class="btn-primary">Start Planning</a>
           </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        &copy; 2025 Thrillanza. All rights reserved.
-      </div>
-    </footer>
+
+          <!-- TWO ICONS AT BOTTOM LEFT -->
+          <div class="illu-bottom illu-left">
+            <img src="icons/hiking.svg" alt="Hiking" class="illu-icon" />
+            <img src="icons/h1.svg" alt="Backpack" class="illu-icon" />
+          </div>
+
+          <!-- TWO ICONS AT BOTTOM RIGHT -->
+          <div class="illu-bottom illu-right">
+            <img src="images/hello.png" alt="Scooter" class="illu-icon" />
+            <img src="icons/h3.svg" alt="Landmark" class="illu-icon" />
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <div class="container">
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <p>123 Travel Lane<br />Adventure City, Earth</p>
+              <p>+1 (555) 123-4567<br />support@thrillanza.com</p>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            &copy; 2025 Thrillanza. All rights reserved.
+          </div>
+        </footer>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/script.js"></script>
+    </html>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
-    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/script.js"></script>
 </html>
